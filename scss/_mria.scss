@@ -20,13 +20,63 @@
 
 .mria__bkg-eff {
     background-image: url(../img/flower_stroke.png);
-    width: 99%;
+    width: 40%;
     height: 925px;
     background-repeat: no-repeat;
     z-index: 0;
     margin-top: 0px;
     position: relative;
     margin-left: -41px;
+}
+
+.mria__weather-bkg {
+    margin-top: 90px;
+    margin-left: 277px;
+}
+
+.mria__weather-bkg-eff {
+    position: absolute;
+    margin-left: -720px;
+    margin-top: 90px;
+}
+
+.mria__weather-info {
+    margin-top: -260px;
+    margin-left: 610px;
+}
+
+.mria__weather-pic {
+    margin-left: -80px;
+    padding-top: 43px;
+}
+
+.mria__weather-temp {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.mria__weather-info-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.mria__weather-info-subtext {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mria__weather-info-gps {
+    display: flex;
+    margin-top: 7px;
+}
+
+.mria__weather-info-pin {
+    margin-left: -35px;
+    margin-right: 24px;
+    height: 16px;
+    margin-top: 2px;
 }
 
 .mria__social {

@@ -7,16 +7,37 @@
 }
 @font-face {
   font-family: "EuclidB";
-  src: url("/fonts/EuclidCircularB-Medium.eot");
-  src: local("Euclid Circular A SemiBold"), url("../fonts/EuclidCircularB-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularB-Medium.woff2") format("woff2"), url("../fonts/EuclidCircularB-Medium.woff") format("woff"), url("../fonts/EEuclidCircularB-Medium.ttf") format("truetype");
+  src: url("../fonts/EuclidCircularB-Medium.eot");
+  src: local("Euclid Circular A SemiBold"), url("../fonts/EuclidCircularB-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularB-Medium.woff2") format("woff2"), url("../fonts/EuclidCircularB-Medium.woff") format("woff"), url("../fonts/EuclidCircularB-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
+  font-family: "EuclidB";
+  src: url("../fonts/EuclidCircularB-Regular.eot");
+  src: local("Euclid Circular A SemiBold"), url("../fonts/EuclidCircularB-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularB-Regular.woff2") format("woff2"), url("../fonts/EuclidCircularB-Regular.woff") format("woff"), url("../fonts/EuclidCircularB-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EuclidB";
+  src: url("../fonts/EuclidCircularB-Light.eot");
+  src: local("Euclid Circular A SemiBold"), url("../fonts/EuclidCircularB-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularB-Light.woff2") format("woff2"), url("../fonts/EuclidCircularB-Light.woff") format("woff"), url("../fonts/EuclidCircularB-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: "SangKung";
-  src: url("/fonts/SangBleuKingdom-Regular-WebXL.otf");
+  src: url("../fonts/SangBleuKingdom-Regular-WebXL.otf");
   src: local("SangBleuKingdom-Regular-WebXL.otf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SangKung";
+  src: url("../fonts/SangBleuKingdom-Bold-WebXL.otf");
+  src: local("SangBleuKingdom-Bold-WebXL.otf");
+  font-weight: 700;
   font-style: normal;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -63,20 +84,24 @@ table {
 }
 
 a, p, h2, button {
-  color: #3D3C3C;
+  color: #3d3c3c;
   font-family: EuclidB;
   text-transform: uppercase;
   -moz-tab-size: 14px;
     -o-tab-size: 14px;
        tab-size: 14px;
 }
-a:hover, p:hover, h2:hover, button:hover {
+
+a, button {
+  cursor: pointer;
+}
+a:hover, button:hover {
   color: #D9C287;
 }
 
 h1 {
   font-family: SangKung;
-  color: #3D3C3C;
+  color: #3d3c3c;
   font-size: 96px;
 }
 
@@ -91,12 +116,17 @@ h1 {
           justify-content: space-between;
 }
 
+.textWhite {
+  color: #FFFFFF;
+  text-transform: inherit;
+}
+
 .header__wrp {
   width: 1300px;
 }
 
 .header__menu {
-  background-color: #3D3C3C;
+  background-color: #3d3c3c;
   width: 80px;
   height: 80px;
 }
@@ -181,7 +211,7 @@ h1 {
 
 .line {
   size: 1px;
-  color: #3D3C3C;
+  color: #3d3c3c;
   width: 47%;
   margin-top: 0;
   margin-left: 0;
@@ -192,7 +222,7 @@ h1 {
   margin-left: 53%;
   margin-right: 0;
   size: 1px;
-  color: #3D3C3C;
+  color: #3d3c3c;
   width: 46%;
   margin-top: -11px;
   opacity: 0.3;
@@ -225,13 +255,65 @@ h1 {
 
 .mria__bkg-eff {
   background-image: url(../img/flower_stroke.png);
-  width: 99%;
+  width: 40%;
   height: 925px;
   background-repeat: no-repeat;
   z-index: 0;
   margin-top: 0px;
   position: relative;
   margin-left: -41px;
+}
+
+.mria__weather-bkg {
+  margin-top: 90px;
+  margin-left: 277px;
+}
+
+.mria__weather-bkg-eff {
+  position: absolute;
+  margin-left: -720px;
+  margin-top: 90px;
+}
+
+.mria__weather-info {
+  margin-top: -260px;
+  margin-left: 610px;
+}
+
+.mria__weather-pic {
+  margin-left: -80px;
+  padding-top: 43px;
+}
+
+.mria__weather-temp {
+  font-size: 48px;
+  font-weight: 400;
+  margin-top: -40px;
+}
+
+.mria__weather-info-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.mria__weather-info-subtext {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mria__weather-info-gps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7px;
+}
+
+.mria__weather-info-pin {
+  margin-left: -35px;
+  margin-right: 24px;
+  height: 16px;
+  margin-top: 2px;
 }
 
 .mria__social {
@@ -317,7 +399,7 @@ h1 {
 }
 
 .mria__btn-3d {
-  color: #3D3C3C;
+  color: #3d3c3c;
   border: 1px solid #D9C287;
   background-color: #FFFFFF;
   border-radius: 6px;
@@ -338,4 +420,207 @@ h1 {
   border-radius: 100%;
   width: 14px;
   padding: 22px 23px;
+}
+
+.choice__title {
+  font-family: "SangKung";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 57px;
+  text-transform: inherit;
+  margin-top: -68px;
+  letter-spacing: 1px;
+}
+
+.wrp {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.choice__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 59px;
+  margin-left: 9px;
+}
+
+.choice__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+  border: 1px solid rgba(61, 60, 60, 0.2);
+  padding: 7px 14px;
+  margin-right: 8px;
+  width: 100%;
+}
+
+.choice__item-text {
+  text-transform: inherit;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+.choice__item-text:hover {
+  color: #D9C287;
+}
+
+.item1 {
+  padding-right: 156px;
+  max-width: 155px;
+  height: 50px;
+}
+
+.item2 {
+  width: 190px;
+  padding-right: 57px;
+  height: 50px;
+}
+
+.item3 {
+  width: 300px;
+  padding-right: 76px;
+  padding-left: 15px;
+  height: 50px;
+}
+
+.choice__item-button {
+  background-color: #3d3c3c;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  text-transform: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 144px;
+  height: 80px;
+  margin-top: -9px;
+}
+
+.choice__item-pic:hover {
+  fill: #3d3c3c;
+}
+
+.pic1 {
+  margin-left: 154px;
+  margin-top: 13px;
+}
+
+.pic2 {
+  margin-left: 56px;
+  margin-top: 13px;
+}
+
+.pic3 {
+  margin-left: 77px;
+  margin-top: 13px;
+}
+
+.choice__tab-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.choice__tab-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 9px;
+  margin-right: 42px;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
+.choice__tab-item-active {
+  color: #D9C287;
+  border-bottom: 2px solid #D9C287;
+}
+
+.choice__tab-body-item {
+  display: none;
+}
+
+.choice__tab-body-active {
+  display: block;
+}
+
+.choice__hr {
+  margin-top: -30px;
+  opacity: 0.3;
+}
+
+.prev {
+  position: relative;
+  top: -45px;
+  left: 1080px;
+}
+
+.next {
+  position: relative;
+  top: -292px;
+  left: 1136px;
+}
+
+.slick-slider {
+  margin-top: 14px;
+}
+
+.marginRight1 {
+  margin-right: -180px;
+}
+
+.marginRight2 {
+  margin-right: 180px;
+}
+
+.slick-slide {
+  /* ... */
+  position: relative;
+}
+
+.tab-text-title {
+  font-family: "EuclidA";
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-top: -123px;
+  padding-left: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.tab-text-subtitle {
+  color: #FFFFFF;
+  text-transform: inherit;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 10px;
+  padding-left: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.choice__tab-body-item-bkg {
+  margin-top: -152px;
+  z-index: 1;
+  position: relative;
+}
+
+.marginRight3 {
+  margin-right: -180px;
+}
+
+.marginRight4 {
+  margin-right: 180px;
 }

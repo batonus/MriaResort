@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'EuclidA';
+    src: url('../fonts/EuclidCircularA-SemiBold.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularA-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularA-SemiBold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularA-SemiBold.woff') format('woff'),
+        url('../fonts/EuclidCircularA-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidB';
+    src: url('/fonts/EuclidCircularB-Medium.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularB-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Medium.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Medium.woff') format('woff'),
+        url('../fonts/EEuclidCircularB-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangKung';
+    src: url('/fonts/SangBleuKingdom-Regular-WebXL.otf');
+    src: local('SangBleuKingdom-Regular-WebXL.otf');
+    font-weight: 400;
+    font-style: normal;
+}
